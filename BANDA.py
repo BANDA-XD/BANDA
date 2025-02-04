@@ -1,9 +1,11 @@
-#!/data/data/com.termux/files/usr/bin/python
-import platform,os
-#####
-os.system("git pull")
+import os, sys, platform,time
+ 
 bit = platform.architecture()[0]
 if bit == '64bit':
-    import BANDA
+    os.system('clear')
+    os.system('git pull')
+    import BANDA   
 elif bit == '32bit':
+    os.system('clear')
+    os.system('git pull')
     import BANDA
